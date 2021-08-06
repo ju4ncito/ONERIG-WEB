@@ -1,0 +1,72 @@
+h4 {
+  font-family: "Calibri Light";
+  position: relative;
+  top: 15px;
+
+
+}
+
+.icon-email {
+  margin: 10px;
+}
+
+.icon-whatsapp {
+  margin: 10px;
+}
+
+.icon-instagram {
+  margin: 10px;
+
+}
+
+
+.contact {
+  width: 350px;
+  height: auto;
+
+  position: relative;
+
+  top: -3rem;
+  left: 80rem;
+
+
+}
+
+h4 {
+  color: white;
+
+}
+
+.btn {
+  color: white;
+}
+
+.footer {
+  font-size: medium;
+  color: white;
+  position: absolute;
+  right: 1500px;
+  top: 400px;
+
+
+}
+
+.container-fluidd {
+
+  margin-top: 50px;
+  /* width:auto;*/
+  height: 400px;
+  bottom: 0px;
+
+}
+
+.containe {
+  background: gray;
+  width: 100%;
+  /*  max-width:500px ;*/
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+
+
+}
