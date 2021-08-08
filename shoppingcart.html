@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="../Desktop/selectbox-personalizado-master/css/estilos.css">
 <title>ONE-RIG</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,11 +68,11 @@
 
 <div class="carrito" style="width: 100%;">
     <br>
-    <center><h1 style="color: darkgreen; position: relative;left: 1rem;" >Presupuestador</h1></center>
+    <center><h1 style="color: black; position: relative;left: 1rem;" >Presupuestador</h1></center>
     <br><br>
     <center><select id="opciones" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
             style="width: 50%">
-        <option selected>Seleccione la cantidad de placas</option>
+        <option selected>Seleccione la cantidad de placas   </option>
         <option id="1" value="1">1</option>
         <option id="2" value="2">2</option>
         <option id="3" value="3">3</option>
@@ -88,13 +89,14 @@
     </select></center>
 
    <center> <select id="op" class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%">
-        <option selected>Seleccione el modelo de la placa de video</option>
+        <option selected>Seleccione el modelo de la placa de video </option>
         <option id="option0" value="30">1660 SUPER</option>
         <option id="option1" value="40">RTX 2070</option>
         <option id="option2" value="48.8">RTX 2080</option>
         <option id="option3" value="58.10">RTX 3060 TI</option>
         <option id="option4" value="60">RTX 3070</option>
-        <option id="option5" value="64">RX 6800 XT</option></center>
+       <option id="option5" value="91.5">RTX 3080 </option>
+        <option id="option6" value="64">RX 6800 XT</option></center>
     </select>
     <BR>
 
@@ -166,6 +168,18 @@
 <style>
     /*ESTILO DE LA VIEW */
     /****************************************************************************************************/
+
+    #opciones{
+       border-radius: 10px;
+        /*background: grey ;*/
+        color: black;
+
+    }
+    #op{
+        border-radius: 10px;
+       /* background: grey ;*/
+        color: black;
+    }
 
     .btn {
         color: black;
