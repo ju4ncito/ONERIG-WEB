@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
+
 
 
     <title>ONE-RIG</title>
@@ -80,44 +83,156 @@
 </html>
 <body>
 
+<!-- ***************************************************************  -->
+
+
+
+
+<!-- ***************************************************************  -->
+
+<nav class="navbar">
+    <div class="brand-title" ><a href="homepage.html" style="color:black">ONE RIG</a></div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="product.html">Catalogo</a></li>
+            <li><a href="shoppingcart.html">Presupuestador</a></li>
+            <li><a href="moreinfo.html">Mas Información</a></li>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+        </ul>
+    </div>
+</nav>
+
 
 <main>
 
-    <div class="containe">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <h3>
-                    <a class="navbar-brand" href="homepage.html" style="color: darkgreen"> ONE RIG</a>
-                </h3>
-                <div class="vertical-line" style="height: 40px;width: 10px; color: white"></div>
+    <div class="social-bar">
+        <a href="https://www.wa.link/87dxow" class="icon icon-whatsapp" target="_blank">
+            <i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/onerig_cba/" class="icon icon-instagram" target="_blank"><i
+                class="bi bi-instagram"></i></a>
+        <a href="mailto:onerigcordoba@gmail.com" class="icon icon-email" target="_blank"><i
+                class="bi bi-envelope"></i></a>
 
+    </div>
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
-                <a class="navbar-brand" href="product.html" style="font-family: Arial "> <i></i> Catalogo</a>
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-                <div class="vertical-line" style="height: 40px;width: 20px; color: white"></div>
-                <a class="navbar-brand" href="shoppingcart.html" style="font-family: Arial"> <i></i> Presupuestador</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+    }
 
+    .brand-title {
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
 
-                </div>
-            </div>
+    .navbar-links {
+        height: 100%;
+    }
 
-        </nav>
-        <div class="social-bar">
-            <a href="https://www.wa.link/87dxow" class="icon icon-whatsapp" target="_blank">
-                <i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.instagram.com/onerig_cba/" class="icon icon-instagram" target="_blank"><i
-                    class="bi bi-instagram"></i></a>
-            <a href="mailto:onerigcordoba@gmail.com" class="icon icon-email" target="_blank"><i
-                    class="bi bi-envelope"></i></a>
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
 
-        </div>
+    .navbar-links li {
+        list-style: none;
+    }
 
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+
+    .navbar-links li:hover {
+        background-color: #555;
+    }
+
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .toggle-button {
+            display: flex;
+        }
+
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar-links ul li {
+            text-align: center;
+        }
+
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+
+</style>
+    <script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })</script>
         <div class="contenedor">
             <div class="slider-contenedor">
                 <section class="contenido-slider">
                     <div>
-                        <h2 style="color:white">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de armados,
+                        <h1 style="color:black">ONE-RIG</h1>
+                        <h2 style="color:white">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de
+                            armados,
                             mantenimientos,
                             de tus rigs a medida.</h2>
                         <a href="moreinfo.html" style="width:100%">MAS INFORMACION</a>
@@ -127,35 +242,38 @@
                 </section>
                 <section class="contenido-slider">
                     <div>
-                        <h2 style="color:white">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs estandar o bien acceder
+                        <h1 style="color:black">ONE-RIG</h1>
+                        <h2 style="color:white">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs
+                            estandar o bien acceder
                             al presupuestador para
                             armar tu rig a medida!</h2>
                         <a href="product.html" style="width:100%">CATALOGO</a>
                     </div>
-                    <img src="animacion2.svg" alt="">
+
 
                 </section>
 
                 <section class="contenido-slider">
                     <div>
+                        <h1 style="color:black">ONE-RIG</h1>
                         <h2 style="color:white">Arma tu rig a medida y conoce su precio</h2>
                         <a href="shoppingcart.html" style="width:100%">PRESUPUESTADOR</a>
                     </div>
-                    <img src="animacion.svg" alt="">
+
 
                 </section>
 
 
-
-
                 <section class="contenido-slider">
                     <div>
-                        <h2 style="color:white">Si necesitas mas informacion sobre nosotros y de que se trata lo que hacemos, podes
+                        <h1 style="color:black">ONE-RIG</h1>
+                        <h2 style="color:white">Si necesitas mas informacion sobre nosotros y de que se trata lo que
+                            hacemos, podes
                             consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
                             WhatsApp!</h2>
                         <a href="faq.html" style="width:100%">FAQ</a>
                     </div>
-                    <img src="animacion3.svg" alt="">
+
 
                 </section>
 
@@ -163,6 +281,8 @@
         </div>
 
         <style>
+
+
             * {
                 margin: 0;
                 padding: 0;
@@ -200,7 +320,7 @@
             }
 
             .contenido-slider:nth-child(3) {
-                background: gray;
+                background: darkgrey;
             }
 
             .contenido-slider > img {
@@ -218,7 +338,7 @@
             }
 
             .contenido-slider a {
-                color: #fff;
+                color: darkgrey;
                 background: #332863;
                 width: 100px;
                 display: block;
@@ -230,7 +350,7 @@
             }
 
             .contenido-slider:nth-child(2) a {
-                background: #fff;
+                background: darkgrey;
                 color: #332863;
 
             }
@@ -271,9 +391,14 @@
             let width = sliderIndividual[0].clientWidth;
             let intervalo = 5000;
 
+
+            next = document.querySelector(".next");
+            prev = document.querySelector(".prev")
+
             window.addEventListener("resize", function () {
                 width = sliderIndividual[0].clientWidth;
             })
+
 
             setInterval(function () {
                 slides();
@@ -294,234 +419,233 @@
                 }
             }
         </script>
-<br>
+        <br>
 
-       <!-- <center></center>
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <p>
-                        <center>
-                    <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
-                    <center><p id="pp">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de armados,
-                        mantenimientos,
-                        de tus rigs a medida.</p></center>
-                    <center><a id="bot" class="btn" href="moreinfo.html">MAS INFORMACION</a></center>
-                    </p></li>
-                <li>
-                    <p id="pp">
-                        <center>
-                    <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
-                    <center><p id="pp">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs estandar o
-                        bien acceder al presupuestador para
-                        armar tu rig a medida!</p></center>
-                    <center><a id="bot" class="btn" href="product.html">CATALOGO</a></center>
-                    </p></li>
-                <li>
-                    <p>
-                        <center>
-                    <h1 id="h11" style="color: black">ONE-RIG</h1></center>
-                    <center><p id="pp">Si necesitas mas informacion sobre nosotros y de que se trata lo que hacemos,
-                        podes consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
-                        WhatsApp!</p></center>
-                    <center><a id="bot" class="btn" href="faq.html">FAQ</a></center>
-                    </p></li>
-                <li>
-                    <p>
-                        <center>
-                    <h1 id="h11" style="color: black">ONE-RIG</h1></center>
-                    <center><p id="pp">Arma tu rig a medida y conoce su precio</p></center>
-                    <center><a id="bot" class="btn" href="shoppingcart.html">PRESUPUESTADOR</a></center>
-                    </p></li>
-            </ul>
-            <div class="buttons">
-                <div class="next">&#10095;</div>
-                <div class="prev">&#10094;</div>
-            </div>
+        <!-- <center></center>
+         <div class="slider">
+             <ul class="slides">
+                 <li>
+                     <p>
+                         <center>
+                     <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
+                     <center><p id="pp">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de armados,
+                         mantenimientos,
+                         de tus rigs a medida.</p></center>
+                     <center><a id="bot" class="btn" href="moreinfo.html">MAS INFORMACION</a></center>
+                     </p></li>
+                 <li>
+                     <p id="pp">
+                         <center>
+                     <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
+                     <center><p id="pp">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs estandar o
+                         bien acceder al presupuestador para
+                         armar tu rig a medida!</p></center>
+                     <center><a id="bot" class="btn" href="product.html">CATALOGO</a></center>
+                     </p></li>
+                 <li>
+                     <p>
+                         <center>
+                     <h1 id="h11" style="color: black">ONE-RIG</h1></center>
+                     <center><p id="pp">Si necesitas mas informacion sobre nosotros y de que se trata lo que hacemos,
+                         podes consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
+                         WhatsApp!</p></center>
+                     <center><a id="bot" class="btn" href="faq.html">FAQ</a></center>
+                     </p></li>
+                 <li>
+                     <p>
+                         <center>
+                     <h1 id="h11" style="color: black">ONE-RIG</h1></center>
+                     <center><p id="pp">Arma tu rig a medida y conoce su precio</p></center>
+                     <center><a id="bot" class="btn" href="shoppingcart.html">PRESUPUESTADOR</a></center>
+                     </p></li>
+             </ul>
+             <div class="buttons">
+                 <div class="next">&#10095;</div>
+                 <div class="prev">&#10094;</div>
+             </div>
 
-        </div>
-        </center>
-        <style>
-            /* slider */
+         </div>
+         </center>
+         <style>
+             /* slider */
 
-            .slider {
+             .slider {
 
-                height: 512px;
-                width: 100%;
-                margin-bottom: 8rem;
-                border: 1px solid black;
-                background: url("assets/images/fonditoo.jpg");
+                 height: 512px;
+                 width: 100%;
+                 margin-bottom: 8rem;
+                 border: 1px solid black;
+                 background: url("assets/images/fonditoo.jpg");
 
-                background-size: 100%;
-                background-repeat: no-repeat;
-                -moz-animation: changeslide 10s linear;
-            }
+                 background-size: 100%;
+                 background-repeat: no-repeat;
+                 -moz-animation: changeslide 10s linear;
+             }
 
-            .slides {
+             .slides {
 
-                font-family: Arial;
-                color: white;
-            }
+                 font-family: Arial;
+                 color: white;
+             }
 
-            #h11 {
-                position: relative;
-                top: 10rem;
-            }
+             #h11 {
+                 position: relative;
+                 top: 10rem;
+             }
 
-            #pp {
-                width: 100%;
-                position: relative;
-                top: 12rem;
-            }
+             #pp {
+                 width: 100%;
+                 position: relative;
+                 top: 12rem;
+             }
 
-            #bot {
-                position: relative;
-                top: 14rem;
-            }
+             #bot {
+                 position: relative;
+                 top: 14rem;
+             }
 
-            .slider ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
+             .slider ul {
+                 list-style-type: none;
+                 margin: 0;
+                 padding: 0;
+             }
 
-            .slider ul li {
-                position: relative;
-                display: none;
-                height: 350px;
-            }
+             .slider ul li {
+                 position: relative;
+                 display: none;
+                 height: 350px;
+             }
 
-            .slider ul li img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                border-radius: 5px;
-            }
+             .slider ul li img {
+                 height: 100%;
+                 width: 100%;
+                 object-fit: cover;
+                 border-radius: 5px;
+             }
 
-            .slider ul li span {
-                position: absolute;
-                bottom: 0;
-                background: hsl(0, 1%, 72%, 0.1);
-                left: 0;
-                width: 100%;
-                padding: 5px;
-                text-align: center;
-                color: #fff;
-            }
+             .slider ul li span {
+                 position: absolute;
+                 bottom: 0;
+                 background: hsl(0, 1%, 72%, 0.1);
+                 left: 0;
+                 width: 100%;
+                 padding: 5px;
+                 text-align: center;
+                 color: #fff;
+             }
 
-            /* buttons */
-            .slider .buttons {
-                position: absolute;
-                top: 40%;
-                width: 100%;
-            }
+             /* buttons */
+             .slider .buttons {
+                 position: absolute;
+                 top: 40%;
+                 width: 100%;
+             }
 
-            .slider .buttons .next {
-                font-size: 2rem;
-                right: 0;
-                position: absolute;
-                cursor: pointer;
-                width: 50px;
-                text-align: center;
-            }
+             .slider .buttons .next {
+                 font-size: 2rem;
+                 right: 0;
+                 position: absolute;
+                 cursor: pointer;
+                 width: 50px;
+                 text-align: center;
+             }
 
-            .slider .buttons .prev {
-                font-size: 2rem;
-                left: 0;
-                position: absolute;
-                cursor: pointer;
-                width: 50px;
-                text-align: center;
-            }
+             .slider .buttons .prev {
+                 font-size: 2rem;
+                 left: 0;
+                 position: absolute;
+                 cursor: pointer;
+                 width: 50px;
+                 text-align: center;
+             }
 
-            .slider .buttons .next:hover {
-                background: hsl(0, 0%, 25%);
-                color: hsl(0, 0%, 93%);
-            }
+             .slider .buttons .next:hover {
+                 background: hsl(0, 0%, 25%);
+                 color: hsl(0, 0%, 93%);
+             }
 
-            .slider .buttons .prev:hover {
-                background: hsl(0, 0%, 25%);
-                color: hsl(0, 0%, 93%);
-            }
+             .slider .buttons .prev:hover {
+                 background: hsl(0, 0%, 25%);
+                 color: hsl(0, 0%, 93%);
+             }
 
-            /* slider animation */
-            .slider ul li {
-                animation-name: fade;
-                animation-duration: 2.5s;
-            }
+             /* slider animation */
+             .slider ul li {
+                 animation-name: fade;
+                 animation-duration: 2.5s;
+             }
 
-            @keyframes fade {
-                from {
-                    opacity: .2
-                }
-                to {
-                    opacity: 1
-                }
+             @keyframes fade {
+                 from {
+                     opacity: .2
+                 }
+                 to {
+                     opacity: 1
+                 }
 
-            }
+             }
 
-        </style>
+         </style>
 
-        <script>
-            window.addEventListener('load', () => {
+         <script>
+             window.addEventListener('load', () => {
 
 
-                // initial slide
-                let slide = 1;
+                 // initial slide
+                 let slide = 1;
 
-                // total slides
-                let slides = document.querySelectorAll(".slider ul li");
-                total = slides.length;
+                 // total slides
+                 let slides = document.querySelectorAll(".slider ul li");
+                 total = slides.length;
 
-                // show first side
-                showSlide(1);
+                 // show first side
+                 showSlide(1);
 
-                next = document.querySelector(".next");
-                prev = document.querySelector(".prev")
+                 next = document.querySelector(".next");
+                 prev = document.querySelector(".prev")
 
-                /**
-                 * event next button
-                 */
-                next.addEventListener('click', (evt) => {
-                    var fechaHora = new Date();
-                    var segundos = fechaHora.getSeconds();
-                    evt.preventDefault();
-                    slide++;
-                    if (slide > total) {
-                        slide = 1;
-                    }
-                    showSlide(slide);
-                })
+                 /**
+                  * event next button
+                  */
+                 next.addEventListener('click', (evt) => {
 
-                /**
-                 * event prev button
-                 */
-                prev.addEventListener("click", (evt) => {
-                    evt.preventDefault();
-                    slide--;
-                    if (slide < 1) {
-                        slide = total;
-                    }
-                    showSlide(slide);
-                })
+                     evt.preventDefault();
+                     slide++;
+                     if (slide > total) {
+                         slide = 1;
+                     }
+                     showSlide(slide);
+                 })
 
-                /**
-                 * show slides
-                 *
-                 * @param {number} n
-                 * @return {null}
-                 *
-                 */
-                function showSlide(n) {
-                    n--; // decrement 1
-                    for (i = 0; i < slides.length; i++) {
-                        (i == n) ? slides[n].style.display = "block" : slides[i].style.display = "none";
-                    }
-                }
+                 /**
+                  * event prev button
+                  */
+                 prev.addEventListener("click", (evt) => {
+                     evt.preventDefault();
+                     slide--;
+                     if (slide < 1) {
+                         slide = total;
+                     }
+                     showSlide(slide);
+                 })
 
-            })
-        </script>
--->
+                 /**
+                  * show slides
+                  *
+                  * @param {number} n
+                  * @return {null}
+                  *
+                  */
+                 function showSlide(n) {
+                     n--; // decrement 1
+                     for (i = 0; i < slides.length; i++) {
+                         (i == n) ? slides[n].style.display = "block" : slides[i].style.display = "none";
+                     }
+                 }
+
+             })
+         </script>
+ -->
 
         <!-- Marketing messaging and featurettes
         ================================================== -->
@@ -615,9 +739,7 @@
                 </div>
                 <div class="col-md-5">
 
-                    <div class="rigchia"><img x="50%" y="50%"
-                                              src="assets/images/ehtereum.jpg"
-                                              width="100%">
+                    <div class="rigchia"><img x="50%" y="50%" src="assets/images/ehtereum.jpg" width="100%" >
                     </div>
 
                 </div>
@@ -634,10 +756,10 @@
                         minado de Monero es más estable que la de Ethereum, con esto queremos decir que su rentabilidad
                         permanecerá más estable al pasar el tiempo.</p>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <div class="rigchia"><img x="50%" y="50%"
+                <div class="col-md-5 order-md-1" >
+                    <div class="rigchia" ><img x="50%" y="50%"
                                               src="assets/images/monero.jpg"
-                                              width="100%" height="400">
+                                              width="100%" height="400" >
                     </div>
                 </div>
             </div>
@@ -651,19 +773,19 @@
         </div><!-- /.container -->
 
     </div>
-    <div class="row featurette" >
+    <div class="row featurette">
 
-    <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading" id="armados"> Nuestros Armados <span class="text-muted"></span></h2>
-        <p lead></p>
-    </div>
-    <div class="col-md-5">
-        <br>
-        <div class="banner" style="width: 65%">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading" id="armados"> Nuestros Armados <span class="text-muted"></span></h2>
+            <p lead></p>
+        </div>
+        <div class="col-md-5">
+            <br>
+            <div class="banner" style="width: 65%">
+
+            </div>
 
         </div>
-
-    </div>
     </div>
     <hr class="featurette-divider">
 
@@ -735,6 +857,7 @@ width: 60px; height: 60px;" src="assets/logo.png.png">
 <!-- ESTILOS DE HOMEPAGE-->
 
 <style>
+
     body {
         background: linear-gradient(45deg, gray, darkgray);
     }

@@ -35,26 +35,132 @@
 <main>
 
     <div class="containe">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <h3>
-                    <a class="navbar-brand" href="homepage.html" style="color: darkgreen">  ONE RIG</a>
-                </h3>
-                <div class="vertical-line" style="height: 40px;width: 10px; color: white"></div>
-
-
-                <a class="navbar-brand" href="product.html" style="font-family: Arial "> <i></i> Catalogo</a>
-
-                <div class="vertical-line" style="height: 40px;width: 20px; color: white"></div>
-                <a class="navbar-brand" href="shoppingcart.html" style="font-family: Arial"> <i></i> Presupuestador</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-
-                </div>
+        <nav class="navbar">
+            <div class="brand-title" ><a href="homepage.html" style="color:black">ONE RIG</a></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="product.html">Catalogo</a></li>
+                    <li><a href="shoppingcart.html">Presupuestador</a></li>
+                    <li><a href="moreinfo.html">Mas Información</a></li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                </ul>
             </div>
-
         </nav>
+        <style>
+            * {
+                box-sizing: border-box;
+
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar {
+
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #333;
+                color: white;
+            }
+
+            .brand-title {
+                font-size: 1.5rem;
+                margin: .5rem;
+            }
+
+            .navbar-links {
+                height: 100%;
+            }
+
+            .navbar-links ul {
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-links li {
+                list-style: none;
+            }
+
+            .navbar-links li a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 1rem;
+            }
+
+            .navbar-links li:hover {
+                background-color: #555;
+            }
+
+            .toggle-button {
+                position: absolute;
+                top: .75rem;
+                right: 1rem;
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 21px;
+            }
+
+            .toggle-button .bar {
+                height: 3px;
+                width: 100%;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            @media (max-width: 800px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .toggle-button {
+                    display: flex;
+                }
+
+                .navbar-links {
+                    display: none;
+                    width: 100%;
+                }
+
+                .navbar-links ul {
+                    width: 100%;
+                    flex-direction: column;
+                }
+
+                .navbar-links ul li {
+                    text-align: center;
+                }
+
+                .navbar-links ul li a {
+                    padding: .5rem 1rem;
+                }
+
+                .navbar-links.active {
+                    display: flex;
+                }
+            }
+
+        </style>
+
+        <script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })</script>
 </div>
 <div class="social-bar">
     <a href="https://www.wa.link/87dxow" class="icon icon-whatsapp" target="_blank">
