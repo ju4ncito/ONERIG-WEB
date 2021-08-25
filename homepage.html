@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
@@ -86,13 +87,12 @@
 <!-- ***************************************************************  -->
 
 
-
-
 <!-- ***************************************************************  -->
 
 <nav class="navbar">
 
-    <div class="brand-title" ><a href="homepage.html" style="color:black;text-decoration:none"><img src="assets/favicon.ico.ico" height="50px">&nbsp ONE RIG</a></div>
+    <div class="brand-title"><a href="homepage.html" style="color:black;text-decoration:none"><img
+            src="assets/favicon.ico.ico" height="50px">&nbsp ONE RIG</a></div>
     <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -109,7 +109,6 @@
 </nav>
 
 
-
 <main>
 
     <div class="social-bar">
@@ -121,108 +120,108 @@
                 class="bi bi-envelope"></i></a>
 
     </div>
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #333;
-        color: white;
-    }
-
-    .brand-title {
-        font-size: 1.5rem;
-        margin: .5rem;
-    }
-
-    .navbar-links {
-        height: 100%;
-    }
-
-    .navbar-links ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar-links li {
-        list-style: none;
-
-    }
-
-    .navbar-links li a {
-        display: block;
-        text-decoration: none;
-        color: white;
-        padding: 1rem;
-    }
-
-    .navbar-links li:hover {
-        background-color: #555;
-    }
-
-    .toggle-button {
-        position: absolute;
-        top: 2rem;
-        right: 1rem;
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-    }
-
-    .toggle-button .bar {
-        height: 3px;
-        width: 100%;
-        background-color: white;
-        border-radius: 10px;
-    }
-
-    @media (max-width: 800px) {
-        .navbar {
-            flex-direction: column;
-            align-items: flex-start;
+    <style>
+        * {
+            box-sizing: border-box;
         }
 
-        .toggle-button {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
             display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+        }
+
+        .brand-title {
+            font-size: 1.5rem;
+            margin: .5rem;
         }
 
         .navbar-links {
-            display: none;
-            width: 100%;
+            height: 100%;
         }
 
         .navbar-links ul {
-            width: 100%;
-            flex-direction: column;
-        }
-
-        .navbar-links ul li {
-            text-align: center;
-        }
-
-        .navbar-links ul li a {
-            padding: .5rem 1rem;
-        }
-
-        .navbar-links.active {
             display: flex;
+            margin: 0;
+            padding: 0;
         }
-    }
 
-</style>
+        .navbar-links li {
+            list-style: none;
+
+        }
+
+        .navbar-links li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+        }
+
+        .navbar-links li:hover {
+            background-color: #555;
+        }
+
+        .toggle-button {
+            position: absolute;
+            top: 2rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+
+        .toggle-button .bar {
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .toggle-button {
+                display: flex;
+            }
+
+            .navbar-links {
+                display: none;
+                width: 100%;
+            }
+
+            .navbar-links ul {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .navbar-links ul li {
+                text-align: center;
+            }
+
+            .navbar-links ul li a {
+                padding: .5rem 1rem;
+            }
+
+            .navbar-links.active {
+                display: flex;
+            }
+        }
+
+    </style>
     <script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -230,109 +229,144 @@
         navbarLinks.classList.toggle('active')
     })</script>
 
-        <div class="contenedor">
-            <div class="slider-contenedor">
-                <section class="contenido-slider">
-                    <div>
-                        <h1 style="color:black">ONE-RIG</h1>
-                        <h2 style="color:white">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de
-                            armados,
-                            mantenimientos,
-                            de tus rigs a medida.</h2>
-                        <a href="moreinfo.html" style="width:100%">MAS INFORMACION</a>
-                    </div>
+    <div class="contenedor">
+        <div class="slider-contenedor">
+            <section class="contenido-slider">
+                <div>
+                    <h1 style="color:black">ONE-RIG</h1>
+                    <h2 style="color:white">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de
+                        armados,
+                        mantenimientos,
+                        de tus rigs a medida.</h2>
+                    <a class="btn btn-outline-dark" href="moreinfo.html" style="width:100%">MAS INFORMACION</a>
+                </div>
 
 
-                </section>
-                <section class="contenido-slider">
-                    <div>
-                        <h1 style="color:black">ONE-RIG</h1>
-                        <h2 style="color:white">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs
-                            estandar o bien acceder
-                            al presupuestador para
-                            armar tu rig a medida!</h2>
-                        <a href="product.html" style="width:100%">CATALOGO</a>
-                    </div>
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h1 style="color:black">ONE-RIG</h1>
+                    <h2 style="color:white">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs
+                        estandar o bien acceder
+                        al presupuestador para
+                        armar tu rig a medida!</h2>
+                    <a class="btn btn-outline-dark" href="product.html" style="width:100%">CATALOGO</a>
+                </div>
 
 
-                </section>
+            </section>
 
-                <section class="contenido-slider">
-                    <div>
-                        <h1 style="color:black">ONE-RIG</h1>
-                        <h2 style="color:white">Arma tu rig a medida y conoce su precio</h2>
-                        <a href="shoppingcart.html" style="width:100%">PRESUPUESTADOR</a>
-                    </div>
-
-
-                </section>
+            <section class="contenido-slider">
+                <div>
+                    <h1 style="color:black">ONE-RIG</h1>
+                    <h2 style="color:white">Arma tu rig a medida y conoce su precio</h2>
+                    <a class="btn btn-outline-dark" href="shoppingcart.html" style="width:100%">PRESUPUESTADOR</a>
+                </div>
 
 
-                <section class="contenido-slider">
-                    <div>
-                        <h1 style="color:black">ONE-RIG</h1>
-                        <h2 style="color:white">Si necesitas mas informacion sobre nosotros y de que se trata lo que
-                            hacemos, podes
-                            consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
-                            WhatsApp!</h2>
-                        <a href="faq.html" style="width:100%">FAQ</a>
-                    </div>
+            </section>
 
 
-                </section>
+            <section class="contenido-slider">
+                <div>
+                    <h1 style="color:black">ONE-RIG</h1>
+                    <h2 style="color:white">Si necesitas mas informacion sobre nosotros y de que se trata lo que
+                        hacemos, podes
+                        consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
+                        WhatsApp!</h2>
+                    <a class="btn btn-outline-dark" href="faq.html" style="width:100%">FAQ</a>
+                </div>
 
-            </div>
+
+            </section>
+
         </div>
+    </div>
     <hr class="featurette-divider">
-        <style>
+    <style>
 
 
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: ' ChunkFive', sans-serif;
 
-            }
+        }
 
-            body {
-                font-family: 'Roboto', sans-serif;
+        body {
+            font-family: 'Roboto', sans-serif;
 
-            }
+        }
 
-            .contenedor {
-                width: 100%;
-                overflow: hidden;
+        .contenedor {
+            width: 100%;
+            overflow: hidden;
 
-            }
+        }
 
-            .slider-contenedor {
-                width: 100%;
-                display: flex;
-            }
+        .slider-contenedor {
+            width: 100%;
+            display: flex;
+        }
 
-            .contenido-slider {
-                border: 0.5px solid black;
+        .contenido-slider {
+            border: 0.5px solid black;
 
-                width: 100%;
-                height: 400px;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                flex-shrink: 0;
-                background-color:darkgrey;
-            }
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-shrink: 0;
+            background-color: darkgrey;
 
-            .contenido-slider:nth-child(2) {
-                background: darkgrey;
-                color: #fff;
-            }
+        }
 
-            .contenido-slider:nth-child(3) {
-                background: darkgrey;
-            }
+        .contenido-slider:nth-child(2) {
+            background: darkgrey;
+            color: #fff;
+        }
 
+        .contenido-slider:nth-child(3) {
+            background: darkgrey;
+        }
+
+        .contenido-slider > img {
+            width: 400px;
+        }
+
+        .contenido-slider > div {
+            width: 40%;
+        }
+
+        .contenido-slider h2 {
+            font-weight: 300;
+            text-align: justify;
+            line-height: 30px;
+        }
+
+        .contenido-slider a {
+            color: black;
+            background: darkgreen;
+            width: 100px;
+            display: block;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 3px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .contenido-slider:nth-child(2) a {
+            background: darkgreen;
+            color: black;
+
+        }
+
+        @media screen and (max-width: 900px) {
             .contenido-slider > img {
-                width: 400px;
+                width: 250px;
             }
 
             .contenido-slider > div {
@@ -340,468 +374,448 @@
             }
 
             .contenido-slider h2 {
-                font-weight: 300;
-                text-align: justify;
-                line-height: 30px;
+                font-size: 23px;
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .contenido-slider {
+                flex-direction: column-reverse;
             }
 
-            .contenido-slider a {
-                color: black;
-                background: darkgreen;
+            .contenido-slider > div {
+                width: 80%;
+            }
+
+        }
+
+    </style>
+
+
+    <script>
+        let slider = document.querySelector(".slider-contenedor")
+        let sliderIndividual = document.querySelectorAll(".contenido-slider")
+        let contador = 1;
+        let width = sliderIndividual[0].clientWidth;
+        let intervalo = 5000;
+
+
+        next = document.querySelector(".next");
+        prev = document.querySelector(".prev")
+
+        window.addEventListener("resize", function () {
+            width = sliderIndividual[0].clientWidth;
+        })
+
+
+        setInterval(function () {
+            slides();
+        }, intervalo);
+
+
+        function slides() {
+            slider.style.transform = "translate(" + (-width * contador) + "px)";
+            slider.style.transition = "transform 2.5s";
+            contador++;
+
+            if (contador == sliderIndividual.length) { //FUNCION CUANDO LLEGA AL ULTIMO VUELVE AL PRIMERO
+                setTimeout(function () {
+                    slider.style.transform = "translate(0px)";
+                    slider.style.transition = "transform 1s";
+                    contador = 1;
+                }, 3000)
+            }
+        }
+    </script>
+    <br>
+
+    <!-- <center></center>
+     <div class="slider">
+         <ul class="slides">
+             <li>
+                 <p>
+                     <center>
+                 <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
+                 <center><p id="pp">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de armados,
+                     mantenimientos,
+                     de tus rigs a medida.</p></center>
+                 <center><a id="bot" class="btn" href="moreinfo.html">MAS INFORMACION</a></center>
+                 </p></li>
+             <li>
+                 <p id="pp">
+                     <center>
+                 <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
+                 <center><p id="pp">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs estandar o
+                     bien acceder al presupuestador para
+                     armar tu rig a medida!</p></center>
+                 <center><a id="bot" class="btn" href="product.html">CATALOGO</a></center>
+                 </p></li>
+             <li>
+                 <p>
+                     <center>
+                 <h1 id="h11" style="color: black">ONE-RIG</h1></center>
+                 <center><p id="pp">Si necesitas mas informacion sobre nosotros y de que se trata lo que hacemos,
+                     podes consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
+                     WhatsApp!</p></center>
+                 <center><a id="bot" class="btn" href="faq.html">FAQ</a></center>
+                 </p></li>
+             <li>
+                 <p>
+                     <center>
+                 <h1 id="h11" style="color: black">ONE-RIG</h1></center>
+                 <center><p id="pp">Arma tu rig a medida y conoce su precio</p></center>
+                 <center><a id="bot" class="btn" href="shoppingcart.html">PRESUPUESTADOR</a></center>
+                 </p></li>
+         </ul>
+         <div class="buttons">
+             <div class="next">&#10095;</div>
+             <div class="prev">&#10094;</div>
+         </div>
+
+     </div>
+     </center>
+     <style>
+         /* slider */
+
+         .slider {
+
+             height: 512px;
+             width: 100%;
+             margin-bottom: 8rem;
+             border: 1px solid black;
+             background: url("assets/images/fonditoo.jpg");
+
+             background-size: 100%;
+             background-repeat: no-repeat;
+             -moz-animation: changeslide 10s linear;
+         }
+
+         .slides {
+
+             font-family: Arial;
+             color: white;
+         }
+
+         #h11 {
+             position: relative;
+             top: 10rem;
+         }
+
+         #pp {
+             width: 100%;
+             position: relative;
+             top: 12rem;
+         }
+
+         #bot {
+             position: relative;
+             top: 14rem;
+         }
+
+         .slider ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+         }
+
+         .slider ul li {
+             position: relative;
+             display: none;
+             height: 350px;
+         }
+
+         .slider ul li img {
+             height: 100%;
+             width: 100%;
+             object-fit: cover;
+             border-radius: 5px;
+         }
+
+         .slider ul li span {
+             position: absolute;
+             bottom: 0;
+             background: hsl(0, 1%, 72%, 0.1);
+             left: 0;
+             width: 100%;
+             padding: 5px;
+             text-align: center;
+             color: #fff;
+         }
+
+         /* buttons */
+         .slider .buttons {
+             position: absolute;
+             top: 40%;
+             width: 100%;
+         }
+
+         .slider .buttons .next {
+             font-size: 2rem;
+             right: 0;
+             position: absolute;
+             cursor: pointer;
+             width: 50px;
+             text-align: center;
+         }
+
+         .slider .buttons .prev {
+             font-size: 2rem;
+             left: 0;
+             position: absolute;
+             cursor: pointer;
+             width: 50px;
+             text-align: center;
+         }
+
+         .slider .buttons .next:hover {
+             background: hsl(0, 0%, 25%);
+             color: hsl(0, 0%, 93%);
+         }
+
+         .slider .buttons .prev:hover {
+             background: hsl(0, 0%, 25%);
+             color: hsl(0, 0%, 93%);
+         }
+
+         /* slider animation */
+         .slider ul li {
+             animation-name: fade;
+             animation-duration: 2.5s;
+         }
+
+         @keyframes fade {
+             from {
+                 opacity: .2
+             }
+             to {
+                 opacity: 1
+             }
+
+         }
+
+     </style>
+
+     <script>
+         window.addEventListener('load', () => {
+
+
+             // initial slide
+             let slide = 1;
+
+             // total slides
+             let slides = document.querySelectorAll(".slider ul li");
+             total = slides.length;
+
+             // show first side
+             showSlide(1);
+
+             next = document.querySelector(".next");
+             prev = document.querySelector(".prev")
+
+             /**
+              * event next button
+              */
+             next.addEventListener('click', (evt) => {
+
+                 evt.preventDefault();
+                 slide++;
+                 if (slide > total) {
+                     slide = 1;
+                 }
+                 showSlide(slide);
+             })
+
+             /**
+              * event prev button
+              */
+             prev.addEventListener("click", (evt) => {
+                 evt.preventDefault();
+                 slide--;
+                 if (slide < 1) {
+                     slide = total;
+                 }
+                 showSlide(slide);
+             })
+
+             /**
+              * show slides
+              *
+              * @param {number} n
+              * @return {null}
+              *
+              */
+             function showSlide(n) {
+                 n--; // decrement 1
+                 for (i = 0; i < slides.length; i++) {
+                     (i == n) ? slides[n].style.display = "block" : slides[i].style.display = "none";
+                 }
+             }
+
+         })
+     </script>
+-->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+
+
+        <div class="plugin">
+            <!-- Cryptocurrency Price Widget -->
+            <script>!function () {
+                var e = document.getElementsByTagName("script"), t = e[e.length - 1],
+                    n = document.createElement("script");
+
+                function r() {
+                    var e = crCryptocoinPriceWidget.init({
+                        base: "USD,EUR,CNY,GBP",
+                        items: "BTC,ETH,LTC,XMR,DASH",
+                        backgroundColor: "636363",
+                        streaming: "1",
+                        striped: "1",
+                        rounded: "1",
+                        boxShadow: "1",
+                        border: "1"
+                    });
+                    t.parentNode.insertBefore(e, t)
+                }
+
+                n.src = "https://co-in.io/es/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH", n.async = !0, n.readyState ? n.onreadystatechange = function () {
+                    "loaded" != n.readyState && "complete" != n.readyState || (n.onreadystatechange = null, r())
+                } : n.onload = function () {
+                    r()
+                }, t.parentNode.insertBefore(n, null)
+            }();</script>
+            <a href="https://currencyrate.today/"></a><!-- /Cryptocurrency Price Widget -->
+
+        </div>
+        <style>
+            .plugin {
+                zoom: normal;
+            }
+        </style>
+        <hr class="featurette-divider">
+        <!--PUBLICIDAD PARA IR A LOS RIGS PREDETERMINADOS -->
+
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">RIG'S ESTANDAR</h5>
+
+                <p class="card-text">Conoce Nuestro Catalogo de Rigs Solicitados</p>
+                <img id="imagen" src="assets/favicon.ico">
+                <a href="product.html" class="btn">CATALOGO</a>
+
+            </div>
+        </div>
+        <!--estilos de la publicicdad PARA IR A LOS RIGS PREDETERMINADOS -->
+        <style>
+            #imagen {
                 width: 100px;
-                display: block;
-                padding: 15px 0;
+
+            }
+
+            .card {
                 text-align: center;
-                border-radius: 3px;
-                margin-top: 20px;
-                text-decoration: none;
+                background: grey;
+
+
             }
 
-            .contenido-slider:nth-child(2) a {
-                background: darkgreen;
+            .card-title {
                 color: black;
-
-            }
-
-            @media screen and (max-width: 900px) {
-                .contenido-slider > img {
-                    width: 250px;
-                }
-
-                .contenido-slider > div {
-                    width: 40%;
-                }
-
-                .contenido-slider h2 {
-                    font-size: 23px;
-                }
-            }
-
-
-            @media screen and (max-width: 600px) {
-                .contenido-slider {
-                    flex-direction: column-reverse;
-                }
-
-                .contenido-slider > div {
-                    width: 80%;
-                }
-
             }
 
         </style>
 
 
-        <script>
-            let slider = document.querySelector(".slider-contenedor")
-            let sliderIndividual = document.querySelectorAll(".contenido-slider")
-            let contador = 1;
-            let width = sliderIndividual[0].clientWidth;
-            let intervalo = 5000;
+        <!-- START THE FEATURETTES -->
 
-
-            next = document.querySelector(".next");
-            prev = document.querySelector(".prev")
-
-            window.addEventListener("resize", function () {
-                width = sliderIndividual[0].clientWidth;
-            })
-
-
-            setInterval(function () {
-                slides();
-            }, intervalo);
-
-
-            function slides() {
-                slider.style.transform = "translate(" + (-width * contador) + "px)";
-                slider.style.transition = "transform 2.5s";
-                contador++;
-
-                if (contador == sliderIndividual.length) { //FUNCION CUANDO LLEGA AL ULTIMO VUELVE AL PRIMERO
-                    setTimeout(function () {
-                        slider.style.transform = "translate(0px)";
-                        slider.style.transition = "transform 1s";
-                        contador = 1;
-                    }, 3000)
-                }
-            }
-        </script>
-        <br>
-
-        <!-- <center></center>
-         <div class="slider">
-             <ul class="slides">
-                 <li>
-                     <p>
-                         <center>
-                     <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
-                     <center><p id="pp">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de armados,
-                         mantenimientos,
-                         de tus rigs a medida.</p></center>
-                     <center><a id="bot" class="btn" href="moreinfo.html">MAS INFORMACION</a></center>
-                     </p></li>
-                 <li>
-                     <p id="pp">
-                         <center>
-                     <h1 id="h11" style="color: black">ONE-RIG.</h1></center>
-                     <center><p id="pp">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs estandar o
-                         bien acceder al presupuestador para
-                         armar tu rig a medida!</p></center>
-                     <center><a id="bot" class="btn" href="product.html">CATALOGO</a></center>
-                     </p></li>
-                 <li>
-                     <p>
-                         <center>
-                     <h1 id="h11" style="color: black">ONE-RIG</h1></center>
-                     <center><p id="pp">Si necesitas mas informacion sobre nosotros y de que se trata lo que hacemos,
-                         podes consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
-                         WhatsApp!</p></center>
-                     <center><a id="bot" class="btn" href="faq.html">FAQ</a></center>
-                     </p></li>
-                 <li>
-                     <p>
-                         <center>
-                     <h1 id="h11" style="color: black">ONE-RIG</h1></center>
-                     <center><p id="pp">Arma tu rig a medida y conoce su precio</p></center>
-                     <center><a id="bot" class="btn" href="shoppingcart.html">PRESUPUESTADOR</a></center>
-                     </p></li>
-             </ul>
-             <div class="buttons">
-                 <div class="next">&#10095;</div>
-                 <div class="prev">&#10094;</div>
-             </div>
-
-         </div>
-         </center>
-         <style>
-             /* slider */
-
-             .slider {
-
-                 height: 512px;
-                 width: 100%;
-                 margin-bottom: 8rem;
-                 border: 1px solid black;
-                 background: url("assets/images/fonditoo.jpg");
-
-                 background-size: 100%;
-                 background-repeat: no-repeat;
-                 -moz-animation: changeslide 10s linear;
-             }
-
-             .slides {
-
-                 font-family: Arial;
-                 color: white;
-             }
-
-             #h11 {
-                 position: relative;
-                 top: 10rem;
-             }
-
-             #pp {
-                 width: 100%;
-                 position: relative;
-                 top: 12rem;
-             }
-
-             #bot {
-                 position: relative;
-                 top: 14rem;
-             }
-
-             .slider ul {
-                 list-style-type: none;
-                 margin: 0;
-                 padding: 0;
-             }
-
-             .slider ul li {
-                 position: relative;
-                 display: none;
-                 height: 350px;
-             }
-
-             .slider ul li img {
-                 height: 100%;
-                 width: 100%;
-                 object-fit: cover;
-                 border-radius: 5px;
-             }
-
-             .slider ul li span {
-                 position: absolute;
-                 bottom: 0;
-                 background: hsl(0, 1%, 72%, 0.1);
-                 left: 0;
-                 width: 100%;
-                 padding: 5px;
-                 text-align: center;
-                 color: #fff;
-             }
-
-             /* buttons */
-             .slider .buttons {
-                 position: absolute;
-                 top: 40%;
-                 width: 100%;
-             }
-
-             .slider .buttons .next {
-                 font-size: 2rem;
-                 right: 0;
-                 position: absolute;
-                 cursor: pointer;
-                 width: 50px;
-                 text-align: center;
-             }
-
-             .slider .buttons .prev {
-                 font-size: 2rem;
-                 left: 0;
-                 position: absolute;
-                 cursor: pointer;
-                 width: 50px;
-                 text-align: center;
-             }
-
-             .slider .buttons .next:hover {
-                 background: hsl(0, 0%, 25%);
-                 color: hsl(0, 0%, 93%);
-             }
-
-             .slider .buttons .prev:hover {
-                 background: hsl(0, 0%, 25%);
-                 color: hsl(0, 0%, 93%);
-             }
-
-             /* slider animation */
-             .slider ul li {
-                 animation-name: fade;
-                 animation-duration: 2.5s;
-             }
-
-             @keyframes fade {
-                 from {
-                     opacity: .2
-                 }
-                 to {
-                     opacity: 1
-                 }
-
-             }
-
-         </style>
-
-         <script>
-             window.addEventListener('load', () => {
-
-
-                 // initial slide
-                 let slide = 1;
-
-                 // total slides
-                 let slides = document.querySelectorAll(".slider ul li");
-                 total = slides.length;
-
-                 // show first side
-                 showSlide(1);
-
-                 next = document.querySelector(".next");
-                 prev = document.querySelector(".prev")
-
-                 /**
-                  * event next button
-                  */
-                 next.addEventListener('click', (evt) => {
-
-                     evt.preventDefault();
-                     slide++;
-                     if (slide > total) {
-                         slide = 1;
-                     }
-                     showSlide(slide);
-                 })
-
-                 /**
-                  * event prev button
-                  */
-                 prev.addEventListener("click", (evt) => {
-                     evt.preventDefault();
-                     slide--;
-                     if (slide < 1) {
-                         slide = total;
-                     }
-                     showSlide(slide);
-                 })
-
-                 /**
-                  * show slides
-                  *
-                  * @param {number} n
-                  * @return {null}
-                  *
-                  */
-                 function showSlide(n) {
-                     n--; // decrement 1
-                     for (i = 0; i < slides.length; i++) {
-                         (i == n) ? slides[n].style.display = "block" : slides[i].style.display = "none";
-                     }
-                 }
-
-             })
-         </script>
- -->
-
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-
-            <!-- Three columns of text below the carousel -->
-
-
-            <div class="plugin">
-                <!-- Cryptocurrency Price Widget -->
-                <script>!function () {
-                    var e = document.getElementsByTagName("script"), t = e[e.length - 1],
-                        n = document.createElement("script");
-
-                    function r() {
-                        var e = crCryptocoinPriceWidget.init({
-                            base: "USD,EUR,CNY,GBP",
-                            items: "BTC,ETH,LTC,XMR,DASH",
-                            backgroundColor: "636363",
-                            streaming: "1",
-                            striped: "1",
-                            rounded: "1",
-                            boxShadow: "1",
-                            border: "1"
-                        });
-                        t.parentNode.insertBefore(e, t)
-                    }
-
-                    n.src = "https://co-in.io/es/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH", n.async = !0, n.readyState ? n.onreadystatechange = function () {
-                        "loaded" != n.readyState && "complete" != n.readyState || (n.onreadystatechange = null, r())
-                    } : n.onload = function () {
-                        r()
-                    }, t.parentNode.insertBefore(n, null)
-                }();</script>
-                <a href="https://currencyrate.today/"></a><!-- /Cryptocurrency Price Widget -->
-
-            </div>
-            <style>
-                .plugin {
-                    zoom: normal;
-                }
-            </style>
-            <hr class="featurette-divider">
-            <!--PUBLICIDAD PARA IR A LOS RIGS PREDETERMINADOS -->
-
-            <div class="card" style="width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title">RIG'S ESTANDAR</h5>
-
-                    <p class="card-text">Conoce Nuestro Catalogo de Rigs Solicitados</p>
-                    <img id="imagen" src="assets/favicon.ico">
-                    <a href="product.html" class="btn">CATALOGO</a>
-
-                </div>
-            </div>
-            <!--estilos de la publicicdad PARA IR A LOS RIGS PREDETERMINADOS -->
-            <style>
-                #imagen {
-                    width: 100px;
-
-                }
-
-                .card {
-                    text-align: center;
-                    background: grey;
-
-
-                }
-
-                .card-title {
-                    color: black;
-                }
-
-            </style>
-
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-            <div class="card" style="width: 100%;">
-                <div class="card-body">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading" style="position:relative;top: -.5rem">
-                        RIG ETHEREUM<span class="text-muted">  </span></h2>
-                    <p class="lead" style="position:relative;top: -.5rem">Ethereum (ETH) es una criptomoneda que se mina con GPU (Placa de video). En este
-                        momento es la moneda más rentable de minar. Un rig hecho para minar ethereum se puede utilizar
-                        para minar muchas otras monedas cuyos algoritmos están diseñados para ser minados con GPU por lo
-                        cual no se tiene un rig que está completamente “atado” al precio de una única criptodivisa. </p>
-                </div>
-                <div class="col-md-5">
-
-                    <div class="rigchia"><img x="50%" y="50%" src="assets/images/ehtereum.jpg" width="100%" >
+        <hr class="featurette-divider">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading" style="position:relative;top: -.5rem">
+                            RIG ETHEREUM<span class="text-muted">  </span></h2>
+                        <p class="lead" style="position:relative;top: -.5rem">Ethereum (ETH) es una criptomoneda que se
+                            mina con GPU (Placa de video). En este
+                            momento es la moneda más rentable de minar. Un rig hecho para minar ethereum se puede
+                            utilizar
+                            para minar muchas otras monedas cuyos algoritmos están diseñados para ser minados con GPU
+                            por lo
+                            cual no se tiene un rig que está completamente “atado” al precio de una única
+                            criptodivisa. </p>
                     </div>
+                    <div class="col-md-5">
 
-                </div>
-            </div>
-                    </div>
-                </div>
-            <hr class="featurette-divider">
-            <div class="card" style="width: 100%;">
-                <div class="card-body">
-            <div class="row featurette">
+                        <div class="rigchia"><img x="50%" y="50%" src="assets/images/ehtereum.jpg" width="100%">
+                        </div>
 
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"style="position:relative;top: -.5rem">RIG MONERO <span class="text-muted"></span></h2>
-                    <p class="lead" style="position:relative;top: -.5rem">Monero (XMR) es una criptomoneda que se mina con CPU (Microprocesador). Su
-                        rentabilidad es menor a la de Ethereum, pero se considera que la durabilidad de un
-                        microprocesador es mucho mayor a la de una placa de video, por lo que se sigue considerando una
-                        moneda en la cual se puede invertir para minar. Adicionado a esto, la curva de dificultad de
-                        minado de Monero es más estable que la de Ethereum, con esto queremos decir que su rentabilidad
-                        permanecerá más estable al pasar el tiempo.</p>
-                </div>
-                <div class="col-md-5 order-md-1" >
-                    <div class="rigchia" ><img x="50%" y="50%"
-                                              src="assets/images/monero.jpg"
-                                              width="100%" style="position: relative; top: 3rem">
                     </div>
                 </div>
             </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <div class="row featurette">
+
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading" style="position:relative;top: -.5rem">RIG MONERO <span
+                                class="text-muted"></span></h2>
+                        <p class="lead" style="position:relative;top: -.5rem">Monero (XMR) es una criptomoneda que se
+                            mina con CPU (Microprocesador). Su
+                            rentabilidad es menor a la de Ethereum, pero se considera que la durabilidad de un
+                            microprocesador es mucho mayor a la de una placa de video, por lo que se sigue considerando
+                            una
+                            moneda en la cual se puede invertir para minar. Adicionado a esto, la curva de dificultad de
+                            minado de Monero es más estable que la de Ethereum, con esto queremos decir que su
+                            rentabilidad
+                            permanecerá más estable al pasar el tiempo.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <div class="rigchia"><img x="50%" y="50%"
+                                                  src="assets/images/monero.jpg"
+                                                  width="100%">
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>
+        </div>
 
 
-            <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
 
-            <!-- /END THE FEATURETTES -->
+        <!-- /END THE FEATURETTES -->
 
-        </div><!-- /.container -->
+    </div><!-- /.container -->
 
     </div>
     <div class="row featurette">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading" style="position:relative;top: -1rem">NUESTROS ARMADOS <span
+                            class="text-muted"></span></h2>
 
-        <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading" id="armados"> Nuestros Armados <span class="text-muted"></span></h2>
-            <p lead></p>
-        </div>
-        <div class="col-md-5">
-            <br>
-            <div class="banner" style="width: 65%">
+                </div>
+                <div class="col-md-5">
+                    <br>
+                    <div class="banner" style="width: 65%">
 
+                    </div>
+
+                </div>
             </div>
-
         </div>
     </div>
+
     <hr class="featurette-divider">
 
     </div>
