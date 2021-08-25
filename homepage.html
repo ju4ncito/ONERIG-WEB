@@ -18,7 +18,7 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
-
+    <link rel="shortcut icon" href="assets/favicon.ico">
 
 
     <title>ONE-RIG</title>
@@ -91,7 +91,8 @@
 <!-- ***************************************************************  -->
 
 <nav class="navbar">
-    <div class="brand-title" ><a href="homepage.html" style="color:black">ONE RIG</a></div>
+
+    <div class="brand-title" ><a href="homepage.html" style="color:black;text-decoration:none"><img src="assets/favicon.ico.ico" height="50px">&nbsp ONE RIG</a></div>
     <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -106,6 +107,7 @@
         </ul>
     </div>
 </nav>
+
 
 
 <main>
@@ -155,6 +157,7 @@
 
     .navbar-links li {
         list-style: none;
+
     }
 
     .navbar-links li a {
@@ -170,7 +173,7 @@
 
     .toggle-button {
         position: absolute;
-        top: .75rem;
+        top: 2rem;
         right: 1rem;
         display: none;
         flex-direction: column;
@@ -226,6 +229,7 @@
     toggleButton.addEventListener('click', () => {
         navbarLinks.classList.toggle('active')
     })</script>
+
         <div class="contenedor">
             <div class="slider-contenedor">
                 <section class="contenido-slider">
@@ -237,7 +241,7 @@
                             de tus rigs a medida.</h2>
                         <a href="moreinfo.html" style="width:100%">MAS INFORMACION</a>
                     </div>
-                    <img src="assets/favicon.ico.ico" alt="10px">
+
 
                 </section>
                 <section class="contenido-slider">
@@ -279,7 +283,7 @@
 
             </div>
         </div>
-
+    <hr class="featurette-divider">
         <style>
 
 
@@ -287,17 +291,18 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+
             }
 
             body {
                 font-family: 'Roboto', sans-serif;
-                background: darkgray;
+
             }
 
             .contenedor {
                 width: 100%;
                 overflow: hidden;
-                border: 1px solid black;
+
             }
 
             .slider-contenedor {
@@ -306,12 +311,15 @@
             }
 
             .contenido-slider {
+                border: 0.5px solid black;
+
                 width: 100%;
-                height: 600px;
+                height: 400px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 flex-shrink: 0;
+                background-color:darkgrey;
             }
 
             .contenido-slider:nth-child(2) {
@@ -338,8 +346,8 @@
             }
 
             .contenido-slider a {
-                color: darkgrey;
-                background: #332863;
+                color: black;
+                background: darkgreen;
                 width: 100px;
                 display: block;
                 padding: 15px 0;
@@ -350,8 +358,8 @@
             }
 
             .contenido-slider:nth-child(2) a {
-                background: darkgrey;
-                color: #332863;
+                background: darkgreen;
+                color: black;
 
             }
 
@@ -727,12 +735,13 @@
             <!-- START THE FEATURETTES -->
 
             <hr class="featurette-divider">
-
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">
+                    <h2 class="featurette-heading" style="position:relative;top: -.5rem">
                         RIG ETHEREUM<span class="text-muted">  </span></h2>
-                    <p class="lead">Ethereum (ETH) es una criptomoneda que se mina con GPU (Placa de video). En este
+                    <p class="lead" style="position:relative;top: -.5rem">Ethereum (ETH) es una criptomoneda que se mina con GPU (Placa de video). En este
                         momento es la moneda más rentable de minar. Un rig hecho para minar ethereum se puede utilizar
                         para minar muchas otras monedas cuyos algoritmos están diseñados para ser minados con GPU por lo
                         cual no se tiene un rig que está completamente “atado” al precio de una única criptodivisa. </p>
@@ -744,12 +753,16 @@
 
                 </div>
             </div>
+                    </div>
+                </div>
             <hr class="featurette-divider">
-
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
             <div class="row featurette">
+
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">RIG MONERO <span class="text-muted"></span></h2>
-                    <p class="lead">Monero (XMR) es una criptomoneda que se mina con CPU (Microprocesador). Su
+                    <h2 class="featurette-heading"style="position:relative;top: -.5rem">RIG MONERO <span class="text-muted"></span></h2>
+                    <p class="lead" style="position:relative;top: -.5rem">Monero (XMR) es una criptomoneda que se mina con CPU (Microprocesador). Su
                         rentabilidad es menor a la de Ethereum, pero se considera que la durabilidad de un
                         microprocesador es mucho mayor a la de una placa de video, por lo que se sigue considerando una
                         moneda en la cual se puede invertir para minar. Adicionado a esto, la curva de dificultad de
@@ -759,10 +772,12 @@
                 <div class="col-md-5 order-md-1" >
                     <div class="rigchia" ><img x="50%" y="50%"
                                               src="assets/images/monero.jpg"
-                                              width="100%" height="400" >
+                                              width="100%" style="position: relative; top: 3rem">
                     </div>
                 </div>
             </div>
+                </div>
+                </div>
 
 
             <hr class="featurette-divider">
