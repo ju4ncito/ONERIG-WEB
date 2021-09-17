@@ -80,6 +80,35 @@
             'phone_conversion_number': '0351 231-1235'
         });
     </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '211735187602392');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=211735187602392&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
 </head>
 </html>
 <body>
@@ -112,7 +141,7 @@
 <main>
 
     <div class="social-bar">
-        <a href="https://www.wa.link/87dxow" class="icon icon-whatsapp" target="_blank">
+        <a href="https://walink.co/b52d94" class="icon icon-whatsapp" target="_blank">
             <i class="bi bi-whatsapp"></i></a>
         <a href="https://www.instagram.com/onerig_cba/" class="icon icon-instagram" target="_blank"><i
                 class="bi bi-instagram"></i></a>
@@ -234,10 +263,8 @@
             <section class="contenido-slider">
                 <div>
                     <h1 style="color:black">ONE-RIG</h1>
-                    <h2 style="color:white">Bienvenidos, Somos ONE-RIG, una organizacion que realiza gestion de
-                        armados,
-                        mantenimientos,
-                        de tus rigs a medida.</h2>
+                    <h2 style="color:white;font-size:15px">Bienvenidos, somos ONE-RIG una empresa de criptomineria,
+                        donde podrás gestionar el armado y monitoreo de tu rig de minería</h2>
                     <a class="btn btn-outline-dark" href="moreinfo.html" style="width:100%">MAS INFORMACION</a>
                 </div>
 
@@ -246,7 +273,8 @@
             <section class="contenido-slider">
                 <div>
                     <h1 style="color:black">ONE-RIG</h1>
-                    <h2 style="color:white">Podes ver nuestro catalogo para realizar un pedido de nuestros rigs
+                    <h2 style="color:white;font-size:15px">Podes ver nuestro catalogo para realizar un pedido de
+                        nuestros rigs
                         estandar o bien acceder
                         al presupuestador para
                         armar tu rig a medida!</h2>
@@ -259,7 +287,7 @@
             <section class="contenido-slider">
                 <div>
                     <h1 style="color:black">ONE-RIG</h1>
-                    <h2 style="color:white">Arma tu rig a medida y conoce su precio</h2>
+                    <h2 style="color:white;font-size:15px">Arma tu rig a medida y conoce su precio</h2>
                     <a class="btn btn-outline-dark" href="shoppingcart.html" style="width:100%">PRESUPUESTADOR</a>
                 </div>
 
@@ -270,7 +298,8 @@
             <section class="contenido-slider">
                 <div>
                     <h1 style="color:black">ONE-RIG</h1>
-                    <h2 style="color:white">Si necesitas mas informacion sobre nosotros y de que se trata lo que
+                    <h2 style="color:white;font-size:15px">Si necesitas mas informacion sobre nosotros y de que se trata
+                        lo que
                         hacemos, podes
                         consultar en la seccion FAQ o bien comunicarte con nosotros via Mail, Instagram o
                         WhatsApp!</h2>
@@ -319,17 +348,17 @@
             justify-content: space-around;
             align-items: center;
             flex-shrink: 0;
-            background-color: darkgrey;
+            background-color: grey;
 
         }
 
         .contenido-slider:nth-child(2) {
-            background: darkgrey;
+            background: grey;
             color: #fff;
         }
 
         .contenido-slider:nth-child(3) {
-            background: darkgrey;
+            background: grey;
         }
 
         .contenido-slider > img {
